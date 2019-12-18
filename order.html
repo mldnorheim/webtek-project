@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <title>PizWiz | Bestill</title>
+  </head>
+  <body id="body">
+
+    <div class="order_page">
+      <div class="go_to_page">
+        <div class="order_boxer" id="make_pizza">
+          <p><a href="#order_make_your_own_pizza"><strong>Sett sammen din egen pizza</strong></a></p>
+        </div>
+
+        <div class="order_boxer" id="random_pizza">
+          <p><a href="#order_random_pizza_gen"><strong>Generér tilfeldig pizza</strong></a></p>
+        </div>
+      </div>
+
+      <p id="allergi"><strong>Allergier eller preferanser?</strong> Skriv inn som kommentar ved betaling.</p>
+
+      <div class="order_boxer" id="order_form_menu">
+        <h3>Bestill fra menyen vår:</h3>
+        <p style="font-size: 16px;">Alle pizzaene kommer i utgangspunktet med hvitost. Hvis du ikke ønsker hvitost på pizzaen, skriv som kommentar i handlekurven.</p>
+
+        <form id="select_pizza" class="order_form_menu" action="index.html" method="post">
+
+        </form>
+        <p>Total pris: <strong id="pris1"> 0 </strong> kr</p>
+        <div class="go_to">
+          <button class="add_to_cart" id="add_to_cart1">Legg til i handlekurv</button>
+          <button class="go_to_cart" onclick="redirectTo('shoppingcart.html')">Gå til handlekurv</button>
+        </div>
+      </div>
+
+      <div class="order_boxer" id="order_make_your_own_pizza">
+        <h3>Sett sammen din egen pizza: </h3>
+        <p style="font-size: 16px;">Alle pizzaene kommer i utgangspunktet med hvitost. Hvis du ikke ønsker hvitost på pizzaen, skriv som kommentar i handlekurven. Hvis du velger vegansk ost, kommer dette istedenfor hvitost. Mozzarella kommer i tillegg til hvitost.</p>
+        <p>Visste du at du kan lage nesten <strong>50 000</strong> forskjellige pizzaer ved å bruke vår side? </p>
+        <form class="order_make_pizza_form" action="index.html" method="get">
+          Velg bunn:
+          <select id="select_bottom" name="bottom">
+
+          </select> <br>
+          Velg saus:
+          <select id="select_sauce" name="sauce">
+
+          </select> <br>
+          Velg topping:
+          <select id="select_topping1" name="topping">
+
+          </select> <br>
+          Velg topping:
+          <select id="select_topping2" name="topping">
+
+          </select> <br>
+          Velg topping:
+          <select id="select_topping3" name="topping">
+
+          </select>
+        </form>
+
+        <p>Pris: <strong id="pris2"> 0 </strong> kr <br></p>
+        <p id="makeOwnPris"></p>
+        <p id="lagtTilEgenPizza"></p>
+        <div class="go_to">
+          <button class="add_to_cart" id="add_to_cart2">Legg til i handlekurv</button>
+          <button class="go_to_cart" onclick="redirectTo('shoppingcart.html')">Gå til handlekurv</button>
+        </div>
+      </div>
+
+
+      <div class="order_boxer" id="order_random_pizza_gen">
+        <h3>Bestill tilfeldig pizza:</h3>
+        <p>Når du bestiller en tilfeldig pizza hos oss får du vite hva som er på pizzaen etter at du har betalt.</p>
+        <p>Hver av våre tilfeldige pizzaer koster 100,-</p>
+        <p id="lagtTilRandomPizza"></p>
+        <div class="go_to">
+          <button class="add_to_cart_random" id="add_to_cart_random">Legg til tilfeldig pizza i handlekurv</button>
+          <button class="go_to_cart" onclick="redirectTo('shoppingcart.html')">Gå til handlekurv</button>
+        </div>
+      </div>
+      <br>
+    </div>
+    <footer></footer>
+    <script src="scripts/order.js"></script>
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+</html>

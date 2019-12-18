@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='css/shoppingcart.css'>
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <title>PizWiz | Handlekurv</title>
+  </head>
+  <body id = "body">
+    <div class="hovedinnhold"> <!-- boks som omfatter alt innholdet, trengs for flexbox -->
+    <div class="generisk_box">
+      <h2>Handlekurv</h2>
+      <div class = "shop_box">
+        <div class = "shop_header">
+          <div class ="shop_pizza"><p>Pizza</p></div>
+          <div class = "shop_antall"><p>Antall</p></div>
+          <div class = "shop_pris"><p>Pris</p></div>
+          <div class = "shop_fjern"><p>Fjern</p></div>
+        </div>
+        <div class = "shop_content"></div>
+        <div class = "sum_line">
+            <p id = "sum_text">Sum</p>
+            <p id = "sum_number">xxx kr</p>
+        </div>
+      </div>
+      <p id = "shop_comment">Kommentar: (skriv inn eventuelle allergier/preferanser her)</p>
+      <textarea id = shop_kommentarfelt></textarea>
+      <br>
+      <button id = "add">Legg til flere pizzaer</button>
+      <button id = "pay">Gå til betaling</button>
+      <br>
+    </div>
+    <br>
+  </div>
+
+
+    <footer></footer>
+
+    <!-- The javascript files -->
+    <script src = "scripts/shoppingcart.js"></script>
+    <script src = "scripts/footer.js"></script>
+    <script src = "scripts/navbar.js"></script>
+  </body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+    <link rel='stylesheet' type='text/css' href='css/mainpage.css'>
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <title> Pizza Wizard </title>
+  </head>
+  <body id = "body">
+
+
+    <!-- =========== SLIDESHOW START =========== -->
+    <div class="slideshow-container">
+
+      <!-- Adding the images we want to display in the slideshow -->
+      <div class="slides">
+        <div class="number">1 / 9</div>
+        <img src="images/pizzabilde1.jpg" alt="pizza1">
+        <div class="text">Image 1</div>
+      </div>
+      <div class="slides">
+        <div class="number">2 / 9</div>
+        <img src="images/pizzabilde3.jpeg" alt="Pizza2">
+        <div class="text">Image 2</div>
+      </div>
+      <div class="slides">
+        <div class="number">3 / 9</div>
+        <img src="images/pizzabilde4.jpeg" alt="pizza3">
+        <div class="text">Image 3</div>
+      </div>
+      <div class="slides">
+        <div class="number">4 / 9</div>
+        <img src="images/pizzabilde5.jpeg" alt="pizza4">
+        <div class="text">Image 4</div>
+      </div>
+      <div class="slides">
+        <div class="number">5 / 9</div>
+        <img src="images/pizzabilde6.jpeg" alt="pizza5">
+        <div class="text">Image 5</div>
+      </div>
+      <div class="slides">
+        <div class="number">6 / 9</div>
+        <img src="images/pizzabilde7.jpeg" alt="pizza6">
+        <div class="text">Image 6</div>
+      </div>
+      <div class="slides">
+        <div class="number">7 / 9</div>
+        <img src="images/pizzabilde9.jpg" alt="pizza7">
+        <div class="text">Image 7</div>
+      </div>
+      <div class="slides">
+        <div class="number">8 / 9</div>
+        <img src="images/pizzabilde10.jpg" alt="pizza8">
+        <div class="text">Image 8</div>
+      </div>
+      <div class="slides">
+        <div class="number">9 / 9</div>
+        <img src="images/pizzabilde2.jpg" alt="pizza9">
+        <div class="text">Image 9</div>
+      </div>
+
+      <!-- Previous and Next buttons -->
+      <a class="prev" onclick="otherSlide(-1)">&#10094;</a>
+      <a class="next" onclick="otherSlide(1)">&#10095;</a>
+
+    </div>
+
+    <!-- Dots signifying which image is displayed -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+      <span class="dot" onclick="currentSlide(9)"></span>
+    </div>
+
+    <!-- =========== SLIDESHOW END =========== -->
+
+    <div id="faktisk_innhold" >
+      <div class="infobokser">
+        <div class="infoboks" id="tilbud">
+          <p> <b>Ukas tilbud: <br> xxxxx </b></p>
+        </div>
+        <div class="infoboks" id="bestille_pizza">
+          <p><a href="order.html"> <b> Klikk her for <br> å bestille pizza </b> </a></p>
+        </div>
+      </div>
+    <footer> </footer>
+    </div>
+    <script type="text/javascript" src="scripts/slideshow.js"> </script>
+    <!-- <script type="text/javascript" src="scripts/generic.js"> </script> -->
+    <script type="text/javascript" src="scripts/footer.js"> </script>
+    <script type="text/javascript" src="scripts/navbar.js"> </script>
+  </body>
+</html>

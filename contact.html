@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='css/stylesheet.css'>
+    <link rel="stylesheet" type='text/css' href="css/contact.css">
+    <link rel='icon' type='image/x-icon' href='favicon.ico'>
+    <title>PizWiz | Kontakt oss</title>
+  </head>
+  <body id="body">
+    <div class="hovedinnhold_contact"> <!-- boks som omfatter alt innholdet, trengs for flexbox -->
+    <div class="kontakt_box"> <!-- innholdet som er i boksen på nettsiden -->
+      <h2> Kontakt oss: </h2>
+      <p> dumbledough@pizzawizard.com </p>
+      <p> tlf.: 123 45 678 </p>
+      <p> Adresse: Høgskoleringen 1, 7491 Trondheim </p>
+      <h2> Kontaktskjema: </h2>
+      <form class="skjema" method="post">
+        <label> Fullt navn: </label> <br>
+        <input type="text" name="navn" placeholder="Navnet ditt" required> <br>
+        <label> Epost-adresse: </label> <br>
+        <input type="email" name="epost" placeholder="eksempel@gmail.com" required> <br>
+        <label> Din melding: </label> <br>
+        <textarea name="melding" placeholder="Skriv inn det du vil si her" required></textarea> <br>
+        <input type="submit" name="send_inn" value="Send inn">
+      </form> <br>
+      <p>PizWiz kan også kontaktes via uglepost.</p>
+      <p>Her finnes du oss på kartet:</p>
+      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1785.2793613500744!2d10.400173315969392!3d63.41923958327169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d3195b7798b83%3A0xe0d0f6920934f487!2sHovedbygningen%2C%20H%C3%B8gskoleringen%201%2C%207034%20Trondheim!5e0!3m2!1sen!2sno!4v1572011361089!5m2!1sen!2sno" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    </div>
+    <footer> </footer> <!-- Footeren settes inn med javascript her -->
+    <script src="scripts/navbar.js"></script>
+    <script src="scripts/footer.js"></script>
+  </body>
+
+</html>
