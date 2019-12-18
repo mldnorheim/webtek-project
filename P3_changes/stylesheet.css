@@ -1,0 +1,67 @@
+body {
+  background-color: lightgrey;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #323232;
+  font-family: arial;
+  text-align: justify;
+  width: 70%;
+  margin: auto;
+}
+
+header{
+    font-family: Times;
+    text-align: left;
+}
+
+.intro{
+    background-color: lightgrey;
+
+}
+
+h1 {
+    font-size: 2.5em;
+    border-bottom: 3px solid #8A2BE2;
+
+}
+
+h2 {
+    border-bottom: 1px solid #8A2BE2;
+    font-size: 30px;
+}
+
+section {
+    padding: 20px;
+    margin: 15px;
+    background-color: #F2F2F2;
+}
+
+
+table {
+    border: 2px solid lightgrey;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+th {
+  background-color: lightgrey;
+}
+
+th, td {
+  padding: 5px;
+}
+
+td {
+  font-size: 16px;
+  border-left: 2px solid lightgrey;
+  min-width: 100px;
+}
+
+tr {
+  border-bottom: 2px solid lightgrey;
+}
+
+img {
+    width: 100%;
+}

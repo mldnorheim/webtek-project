@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>PizWiz | P3 endringer</title>
+    <meta charset="utf-8">
+    <link rel='stylesheet' type='text/css' href='stylesheet.css'>
+  <link rel='icon' type='image/x-icon' href='../favicon.ico'>
+  </head>
+  <body>
+    <section class='intro'>
+      <header>
+        <h1> Pizza Wizard P3 endringer </h1>
+      </header>
+      <ul class='introlist'>
+        <li> Skrevet av: Liv Elise, Mona Lena, Ella, Lars Magnus og Bente </li>
+        <li> Dato: 10. november 2019 </li>
+        <li> <a href="http://folk.ntnu.no/livehe/Documents/P3/mainpage.html">Link til den endelige siden på folk.ntnu.no</a> </li>
+        <li> <a href="http://folk.ntnu.no/livehe/Documents/">Link til alle filene våre på folk.ntnu.no</a> </li>
+      </ul>
+    </section>
+    <section>
+      <h2> Endringene vi har gjort </h2>
+      <p> <strong>CSS-filer:</strong> Vi valgte å lage en egen css-fil for hver underside for å gjøre det lettere for oss å jobbe parallelt med alle undersidene. </p>
+      <p> <strong>Kontaktsiden:</strong> På kontaktsiden valgte vi å også legge inn et kart (embed fra Google Maps), siden det kan være nyttig for brukere av siden. </p>
+      <p> <strong>Bestillingssiden:</strong> På bestillingssiden endret vi litt på utseendet, bla. ved å la pizzamenyen bare være én kolonne, istedenfor å dele den i to kolonner (slik vi gjorde i mockupen). I tillegg på menyen la vi til hva som var på hver av pizzaene, og la til et ikon som viser om en spesifikk pizza er vegetar. Vi skulle egentlig ha et bilde av hver av de forskjellige pizzaene i menyen, men det hadde blitt litt myte arbeid å enten lage alle de forskjellige pizzaene, eller å ha funnet et riktig bilde som passer til akkurat de pizzaene vi har valgt. Vi endret også utseendet på knappene litt ved å ha ulik farge på "legg til i handlekurv" og "gå til handlekurv" -knappene, for å gjøre siden mer lettleselig. </p>
+      <p> <strong>Handekurven:</strong> I handlekurven endret vi på utseendet til knappene slik at de er litt bredere. Fjernet også "border" for den venstre knappen. Både knappene og de hvite boksene har fått kantene avrundet. Gjorde disse endringene fordi det så bedre ut slik. Lot også være å gjøre skriften fet slik som i mockupen da dette så bedre ut. Den faktiske summen av prisene ble plassert helt til høyre istedenfor å ha litt luft til høyre for seg da dette var lettere å implementere.</p>
+      <p> <strong>Javascript-filer:</strong> Vi valgte å legge inn funksjonen for grønnsaksrabatt inn i order.js, istedenfor å ha en separat js-fil. Koden som gjør at man kan generere tilfeldige pizzaer ble også lagt inn i order.js. Så istedenfor å ha 3 separate js-filer (slik vi skrev i P2) ble disse slått sammen i én, fordi det ga mer mening å gjøre det slik. La også til footer.js for å lage footer til sidene. </p>
+    </section>
+    <section>
+      <h2> Minimumskrav </h2>
+      <ol>
+        <li> <strong>Bestillingssiden (order.js):</strong> Lars Magnus jobbet med å lage en funksjonell bestillingsside der man kan velge antall pizzaer, sette sammen sin egen pizza ved å velge fra selecter (generert fra objekter i Javascript), og prisen blir regnet ut på hver av disse. Hele menyen ble laget dynamisk og dermed gjør det lettere hvis vi vil legge til/fjerne pizzaer fra menyen, i tillegg ble hver av selectene fylt inn via Javascript, av samme grunn som vi gjorde for menyen. </li>
+        <li> <strong>Random pizzagenerator (order.js):</strong> Lars Magnus lagde funksjonen at man kan generere tilfeldige pizzaer. Her gikk funksjonen gjennom elementene i objektene som innehold bunner, sauser og toppinger, og valgte én tilfeldig bunn, én tilfeldig saus og 0 til 10 tilfeldige toppinger (kan være flere av den samme inkludert ingen topping). </li>
+        <li> <strong>Grønnsaksrabatt (order.js):</strong> Ella lagde funksjonen for at man får 25 kr rabatt i "lag din egen pizza" hvis man velger 3 grønnsaker som topping. Dette ble gjort ved å sjekke hvor mange av toppingene man har valgt er grønnsaker, og redefinere prisen til å være 25 kr lavere hvis antall grønnsaker er 3. </li>
+        <li> <strong>Handlekurv: (shoppingcart.js) </strong>
+          Liv Elise lagde en funksjon som skriver ut pizzaer med antall, pris og fjern knapp til handlekurven. Pizzaene blir hentet fra bestillingssiden ved bruk av Window localStorage.
+          For å summere prisene av pizzaene ble det laget en egen funksjon som finner ut hvor mange pizzaer det er av hver type og hvor mye de koster. Summen vil oppdateres når pizzaene endres på.
+          La også inn funksjonaliteten her for når skal gå til betaling og det kommer opp en pop-up.
+        </li>
+        <li> <strong>Header og footer:</strong> Header og footer ble satt inn med javascript for å oppfylle modularitetskravet. Dette ble gjort i to separate filer fordi det ble gjort av to forskjellige personer, og det da blir lettere å jobbe med det samtidig. Lars Magnus lagde headeren. Footeren ble laget ved at alle html-sidene har en tom footer-tag, og scriptet setter inn kode i denne. Footeren ble laget av Ella. </li>
+        <li> <strong>Slideshow:</strong> Et slideshow på forsida bestående av 9 pizzabilder ble implementert med javascript (og html) og designet med css. Slideshowet bytter bilde hvert femte sekund, men man har også muligheten til å skifte bilde selv: fram og tilbake vha. piler eller skifte til et hvilket som helst bilde vha. "kulene" under slideshowet (som representerer hvert sitt bilde). </li>
+      </ol> <br>
+      <h3> Modularitet </h3>
+      <p> Vi har oppfylt kravet til modularitet ved å legge inn toppmenyen til siden og footeren med javascript. Ella jobbet med å lage scriptet som legger inn footeren. </p>
+      <p> I tillegg har vi hatt en felles css-fil som alle sidene har vært linket til, som inneholder styling som er felles for alle sidene, bla. styling for meny og footer. </p>
+    </section>
+    <section>
+      <h2> Endelig struktur </h2>
+      <ul id='planlist'>
+        <li> mainpage.html </li>
+        <li> order.html </li>
+        <li> contact.html </li>
+        <li> about.html </li>
+        <li> shoppingcart.html </li>
+        <li> favicon.ico </li>
+        <li> images/
+          <ul>
+            <li> pizzabilde1.jpg </li>
+            <li> pizzabilde2.jpg </li>
+            <li> pizzabilde3.jpeg </li>
+            <li> pizzabilde4.jpeg </li>
+            <li> pizzabilde5.jpeg </li>
+            <li> pizzabilde6.jpeg </li>
+            <li> pizzabilde7.jpeg </li>
+            <li> pizzabilde8.jpg </li>
+            <li> pizzabilde9.jpg </li>
+            <li> oss.jpg </li>
+            <li> logo.png </li>
+            <li> handlekurv.svg </li>
+            <li> veggie.svg </li>
+          </ul>
+        </li>
+        <li> scripts/
+          <ul>
+            <li> order.js </li>
+            <li> shoppingcart.js </li>
+            <li> navbar.js </li>
+            <li> footer.js </li>
+            <li> slideshow.js </li>
+          </ul>
+        </li>
+        <li> css/
+          <ul>
+            <li> order.css </li>
+            <li> mainpage.css </li>
+            <li> contact.css </li>
+            <li> shoppingcart.css </li>
+            <li> about.css </li>
+            <li> stylesheet.css </li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h2> Endelig arbeidsfordeling </h2>
+      <table>
+        <tr>
+          <th> Filnavn </th>
+          <th> Beskrivelse </th>
+          <th> Ansvar </th>
+        </tr>
+        <tr>
+          <td> mainpage.html </td>
+          <td> Forsiden for nettsidene våre </td>
+          <td> Bente </td>
+        </tr>
+        <tr>
+          <td> order.html </td>
+          <td> Siden der man bestiller pizzaer </td>
+          <td> Lars Magnus </td>
+        </tr>
+        <tr>
+          <td> contact.html </td>
+          <td> Side med kontaktinformasjon, kontaktskjema og kart </td>
+          <td> Ella </td>
+        </tr>
+        <tr>
+          <td> about.html </td>
+          <td> Side med informasjon om Dumbledough og Pizza Wizard </td>
+          <td> Mona-Lena</td>
+        </tr>
+        <tr>
+          <td> shoppingcart.html </td>
+          <td> Siden der man kan se hvilke pizzaer man skal kjøpe</td>
+          <td> Liv Elise </td>
+        </tr>
+        <tr>
+          <td> css/stylesheet.css </td>
+          <td> Generisk styling knyttet til alle sidene </td>
+          <td> Alle </td>
+        </tr>
+        <tr>
+          <td> css/mainpage.css </td>
+          <td> Spesifikk styling til hovedsiden </td>
+          <td> Bente, Mona-Lena</td>
+        </tr>
+        <tr>
+          <td> css/order.css </td>
+          <td> Spesifikk styling til "Bestill"-siden </td>
+          <td> Lars Magnus </td>
+        </tr>
+        <tr>
+          <td> css/contact.css </td>
+          <td> Spesifikk styling til "Kontakt"-siden </td>
+          <td> Ella </td>
+        </tr>
+        <tr>
+          <td> css/about.css </td>
+          <td> Spesifikk styling til "Om oss"-siden </td>
+          <td> Mona-Lena </td>
+        </tr>
+        <tr>
+          <td> css/shoppingcart.css </td>
+          <td> Spesifikk styling til handlekurv-siden </td>
+          <td> Liv Elise</td>
+        </tr>
+        <tr>
+          <td> scripts/navbar.js </td>
+          <td> Setter inn meny på html-sidene </td>
+          <td> Lars Magnus </td>
+        </tr>
+        <tr>
+          <td> scripts/footer.js </td>
+          <td> Setter inn footer på html-sidene </td>
+          <td> Ella </td>
+        </tr>
+        <tr>
+          <td> scripts/order.js </td>
+          <td> Velge pizzaer fra pizzamenyen, sette sammen sin egen pizza, eller generere en tilfeldig pizza. Gjør at man får grønnsaksrabatt hvis man velger 3 grønnsaker. </td>
+          <td> Lars Magnus (og Ella: secret discount function) </td>
+        </tr>
+        <tr>
+          <td> scripts/shoppingcart.js </td>
+          <td> Legge til pizzaene fra bestillingen i handlekurven, endre antallet av typene med pizza, slette pizza fra handlekurven </td>
+          <td> Liv Elise</td>
+        </tr>
+        <tr>
+          <td> scripts/slideshow.js </td>
+          <td> Setter inn slideshow på mainpage.html </td>
+          <td> Mona-Lena </td>
+        </tr>
+        <tr>
+          <td> images/logo.png </td>
+          <td> Logoen som står i menyen </td>
+          <td> Ella </td>
+        </tr>
+        <tr>
+          <td> images/handlekurv.svg </td>
+          <td> handlekurven som står i menyen </td>
+          <td> Ella </td>
+        </tr>
+        <tr>
+          <td> images/veggie.svg </td>
+          <td> Symbol til bestillingssiden som viser hvis det er vegetar/vegansk </td>
+          <td> Ella </td>
+        </tr>
+      </table>
+    </section>
+  </body>
+</html>
