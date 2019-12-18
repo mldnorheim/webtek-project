@@ -1,0 +1,145 @@
+.generisk_box {
+  height: auto;
+  min-height: 700px;
+  min-width: 400px; /*Så den ikke blir smadra når vinduet blit lite*/
+  text-align: left;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 30px;
+}
+
+.test {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+/*Styling for den hvite boksen som inneholder tabellen med pizza i handlekurven og sånt*/
+.shop_box {
+    background-color: white;
+    margin: auto;
+    width: 80%;
+    min-height: 300px;
+    min-width:300px; /*Sånn at det forsatt går ann å se hva som står i handlekurven selv om vinduet blir lite*/
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+}
+
+/*Styler overskriftene i tabellen over pizzaer*/
+.shop_header {
+  width: 96%;
+  margin: auto;
+  border-bottom: 2px solid #601c35;
+  font-style: italic;
+  font-size: 15px;
+  text-align: left;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 0px;
+}
+
+/*For inneholdet i tabellen over pizzaer*/
+.shop_content {
+  margin: auto;
+  width: 96%;
+  text-align: left;
+  margin-top: 0px;
+}
+
+/*For a plassere pizzaene som legges til riktig*/
+.pizza {
+  display: flex;
+  flex-direction: row;
+}
+
+/*Disse er for å plassere kolonnene i pizzatabellen riktig*/
+.shop_pizza {
+  width: 50%;
+}
+
+.shop_antall {
+  width: 20%;
+}
+
+.shop_pris {
+  width: 15%;
+
+}
+
+.shop_fjern {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/*For å plassere feltet med antall pizzaer riktig*/
+input[type = "number"] {
+  position: relative;
+  right: 10px;
+  top: 15px;
+}
+
+/*For at fjern pizza knapp skal se riktig ut og plasseres på rett sted*/
+button {
+  background-color: transparent;
+  border: 0px;
+  color: #601c35;
+  position: relative;
+  margin: auto;
+}
+
+/*Styler raden med sum over prisene til pizzaene*/
+.sum_line {
+  margin:auto;
+  width: 96%;
+  border-top: 2px solid #601c35;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  margin-bottom: 0px;
+}
+
+/*Plasserer kommentaren rett over kommentarfeltet på rett sted*/
+#shop_comment {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 0px;
+  text-align: left;
+}
+
+/*Styler kommentarfeltet*/
+#shop_kommentarfelt {
+  width: 80%;
+  min-height: 75px;
+  max-width: 80%;
+  border: none;
+  border-radius: 4px;
+}
+
+#add, #pay {
+  padding: 20px;
+  font-size: 18px;
+  width: 40%;
+  min-height: 60px;
+  border-radius: 4px;
+}
+
+
+/*Styler legg til flere pizza knappen*/
+#add {
+  color: #601c35;
+  background-color: white;
+}
+
+/*Styler gå til betaling knappen*/
+#pay {
+  color: white;
+  background-color: #601c35;
+  font-weight: bold;
+}

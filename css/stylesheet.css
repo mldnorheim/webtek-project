@@ -1,0 +1,145 @@
+body {
+  background-color: lightgrey;
+  background-image: url("../images/pizzabilde2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #323232;
+  font-family: arial;
+  text-align: justify;
+  margin: auto;
+  position: relative;
+}
+
+header {
+    font-family: Times;
+    text-align: left;
+}
+
+#pizzabilde {
+  width: 100%;
+  position: absolute;
+  top: 20px;
+}
+
+.generisk_box {
+  width: 55%;
+  border-style: solid;
+  border-color: #601c35;
+  color:#601c35;
+  text-align: center;
+  border-width: 5px;
+  /*position: absolute;*/
+  background-color: #eccdf3;
+  left:22.5%;
+  top:100px;
+  margin: auto;
+  margin-bottom: 10px;
+  padding-bottom: 50px;
+}
+
+/*meny styling */
+
+.meny{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: #601c35;
+  font-size: 30px;
+  width: 100%;
+  height: 75px;
+  border-bottom: 20px solid #601c35;
+  margin-bottom: 10px;
+}
+
+#order_button, #contact_button, #about_button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 30px;
+  color: #601c35;
+  font-weight: bold;
+}
+
+/*footer styling */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  width: 100%;
+  float: left;
+}
+
+#footer_top, #footer_bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+#footer_top {
+  background-color: #601c35;
+  color: white;
+}
+
+#footer_bottom {
+  background-color: white;
+  color: #601c35;
+}
+
+.footer_tekst > * {
+  margin: 0;
+}
+
+.footer_tekst > p {
+  margin-left: 22.5%;
+}
+
+
+/* Dette er for menyen */ /*Kopierte fra contact.css */
+#order_button, #contact_button, #about_button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 25px;
+  color: #601c35;
+  font-weight: bold;
+  height: auto;
+  width: 200px;
+  margin-left: 0;
+  margin-right: 0;
+}
+#logo {
+  height: inherit;
+  align-self: flex-end;
+  margin-left: 10px;
+}
+
+#shopcart {
+  height: 50px;
+}
+
+#logo:active, #order_button:active, #contact_button:active, #about_button:active, #shopcart:active{
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+#logo:focus, #order_button:focus, #contact_button:focus, #about_button:focus, #shopcart:focus{
+  outline:0;
+}
+
+#logo:hover, #order_button:hover, #contact_button:hover, #about_button:hover, #shopcart:hover{
+  outline:0;
+  cursor: pointer;
+}
+
+
+/*Test*/
+
+.hovedinnhold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}

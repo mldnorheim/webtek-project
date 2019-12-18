@@ -1,0 +1,35 @@
+/* .about_box {
+    width: 55%;
+    border-style: solid;
+    border-color: #601c35;
+    color:#601c35;
+    text-align: center;
+    border-width: 5px;
+    position: absolute;
+    background-color: #eccdf3;
+    left:22.5%;
+    top:50px;
+    padding: 3%;
+} */
+/*
+p {
+    font-size: 15px;
+
+} */
+
+#oss {
+    width: 80%;
+    position: relative;
+}
+
+p {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+
+h2 {
+  text-align: left;
+  margin-left: 10%;
+  margin-top: 30px;
+}

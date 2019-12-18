@@ -1,0 +1,210 @@
+
+body {
+  background-color: #eccdf3;
+  background-image: none;
+}
+
+/*pizzabildet*/
+#mainpage_pizzabilde, .slides{
+  width: 100%;
+  display: inline-flex;
+}
+
+.slides img {
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.number, .text{
+  display: none;
+}
+
+/*design på bokser */
+.infobokser{
+  width: 100%;
+  background-color: #eccdf3;
+  /* border-top: solid #601c35 15px; */
+  /*position: absolute;*/
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.infoboks{
+  width: 30%;
+  background-color: white;
+  height: 70%;
+  text-align: center;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #601c35;
+  color: #601c35;
+  font-size: 150%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*posisjonering av bokser*/
+
+.faktisk_innhold{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tilbud, #bestille_pizza{
+  /*position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 15%;
+  right: 55%;
+  */
+}
+
+#bestille_pizza{
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/*adaptibilitet*/
+@media only screen and (max-device-width:940px){
+  .infoboks{
+    font-size: 100%;
+  }
+}
+
+/* link styling */
+a:link{
+  color:#601c35;
+  text-decoration: none;
+}
+
+a:visited{
+  color:#601c35;
+}
+
+a:hover{
+  color:#601c35;
+  text-decoration: underline;
+}
+
+a:active{
+  color:#601c35;
+  text-decoration: underline;
+}
+
+
+
+/* SLIDESHOW, begin */
+
+.slideshow-container {
+  width: 100%;
+  height: 65vw;
+  position: relative;
+  margin: 15px auto;
+  margin-top: -10px;
+  display: block;
+}
+
+.slides {
+  display: none;
+  height: 100%;
+  /* Fading animation: */
+  animation-name: fade;
+  -webkit-animation-name: fade; /* for old browsers*/
+  animation-duration: 2s;
+  -webkit-animation-duration: 2s; /* for old browsers*/
+}
+
+.slides img {
+  min-width: 100%;
+}
+
+/* Animation code: */
+@keyframes fade {
+  from {opacity: .4;} /*background-color: #eccdf3;*/
+  to {opacity: 1;} /*background-color: #601c35;*/
+}
+@-webkit-keyframes fade { /* for old browsers */
+  from {opacity: .4;}
+  to {opacity: 1;}
+}
+
+/* Previous and Next: */
+.prev, .next {
+  position: absolute;
+  width: auto;
+  bottom: -2%;
+  /*margin-top: 370px;*/
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.5s ease;
+  cursor: pointer;
+  user-select: none;
+}
+.prev:hover, .next:hover {
+  background-color: #601c35;
+}
+.next {
+  right: 0;
+}
+
+/* Style the caption texts: */
+.text {
+  position: absolute;
+  padding: 5px 15px;
+  width: 10%;
+  bottom: 10px;
+  color: white; /* #eccdf3; */
+  background-color: #601c35;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* The dots signifying which slide is shown: */
+.dot {
+  height: 20px;
+  width: 20px;
+  margin: 0 2px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.dots {
+  margin: 0 auto;
+  width: fit-content;
+}
+
+/* The numbering of slides */
+.number {
+  color: #601c35;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active, .dot:hover {
+  background-color: #601c35; /*white;*/
+}
+
+/* SLIDESHOW, end */
+
+/* Styling for footeren: */
+.footer_tekst > p {
+  margin-left: 14%;
+}

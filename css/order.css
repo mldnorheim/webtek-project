@@ -1,0 +1,122 @@
+.order_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+ .order_boxer {
+  text-align: left;
+  padding: 10px;
+  width: 55%;
+  border-style: solid;
+  border-color: #601c35;
+  color:#601c35;
+  border-width: 5px;
+  background-color: #eccdf3;
+  margin: 10px;
+}
+
+.go_to_page {
+  width: 57%;
+  display: flex;
+}
+
+
+#order_from_menu > form {
+  justify-content: center;
+}
+
+#make_pizza {
+  margin-left: 0;
+  text-align: center;
+}
+
+#random_pizza {
+  margin-right: 0;
+  text-align: center;
+}
+
+select {
+  width: 200px;
+}
+
+form > input[type=number] {
+  width: 31px;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 3px;
+}
+
+#allergi {
+  background-color: white;
+  color: #601c35;
+  width: 55%;
+  padding: 10px;
+}
+
+.toppingListeHverPizza {
+  margin-top: 0;
+  font-size: 80%;
+}
+
+a {
+  color: #601c35;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.add_to_cart, .add_to_cart_random {
+  background-color: #601c35;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+  width: 320px;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  margin-right: 5px;
+}
+
+.go_to_cart {
+  background-color: white;
+  color: #601c35;
+  padding: 5px;
+  border-radius: 4px;
+  width: 320px;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+}
+
+.go_to {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+.footer_tekst > p {
+  margin-left: 20.5%;
+}
+
+.vegetarBilde {
+  width: 13px;
+}
+
+
+/*Test*/
+
+.hovedinnhold {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
